@@ -45,7 +45,9 @@
     border-radius: 1000px;
     cursor: pointer;
 }
-
+.btn img {
+    width: 18px;
+}
 
 /* Nav-Bar Styles */
 
@@ -54,7 +56,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #1A0B2E;
-    border-bottom: 2px solid #412567;
+    border-bottom: 1px solid #412567;
 
 }
 
@@ -63,7 +65,6 @@
     color: #ffffff;
 }
 .nav-menu {
-    display: flex;
     gap: 40px;
 }
 
@@ -77,18 +78,100 @@
 
 
 .subscribe-btn {
-    display: flex;
     width: 135px;
 }
 
-.subscribe-btn img {
-    width: 18px;
-}
+
 
 
 
 /* Hero-Banner Styles */
 
+.hero {
+    height: 760px;
+    background-image: url(./assets/hero-bg.png);
+    background-color: #1A0B2E;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mic {
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    border: 8px solid #2A186C;
+    box-shadow: 0 3px 27px #533C72;
+}
+
+.mic-image {
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic-image img {
+    width: auto;
+    height: 175px;
+}
+.hero-badge{
+    height: 38px;
+    width: 75px;
+    position: absolute;
+    top: 20px; 
+    right: 15px; 
+    padding: 10px 10px;
+    border-radius: 1000px;
+    background: #00FF88;
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 3px 27px #00FF88;
+
+    justify-content: center;
+}
+
+.hero-title{
+    padding-top: 40px;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.hero-description{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+.cta-button-container{
+    gap: 20px;
+    padding-top: 32px;
+    justify-content: center;
+}
+
+.cta-btn2 {
+    color: #00FF88;
+    background: none;
+    border: .5px solid #00FF88;
+}
 /* About Section Styles */
 
 /* Choose Section Styles */
