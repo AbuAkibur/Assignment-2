@@ -1,0 +1,100 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+/* Shared Styles */
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{ display: grid;
+}
+
+.container{
+    width: 100%;
+    padding: 0px 200px;
+}
+
+.gradient-text{
+    background: -webkit-linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn{
+    height: 44px;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+
+/* Nav-Bar Styles */
+
+.nav-bar{
+    height: 92px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A0B2E;
+    border-bottom: 2px solid #412567;
+
+}
+
+.nav-logo{
+    font-size: 32px;
+    color: #ffffff;
+}
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.subscribe-btn {
+    display: flex;
+    width: 135px;
+}
+
+.subscribe-btn img {
+    width: 18px;
+}
+
+
+
+/* Hero-Banner Styles */
+
+/* About Section Styles */
+
+/* Choose Section Styles */
+
+/* Featured Episodes Styles */
+
+/* Hosts Section Styles */
+
+/* Footer Styles */
