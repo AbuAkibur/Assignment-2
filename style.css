@@ -57,7 +57,6 @@
     align-items: center;
     background-color: #1A0B2E;
     border-bottom: 1px solid #412567;
-
 }
 
 .nav-logo{
@@ -174,6 +173,61 @@
 }
 /* About Section Styles */
 
+.about {
+    background-color: #1A0B2E;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight:700;
+  
+}
+
+.about-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.about-content hr {
+    width: 100%;
+    max-width: 1200px;
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 40px 0;
+}
+
+.about-stats-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+
+.stats-card-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00FF88;
+}
+
+.stats-card-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6px;
+}
 /* Choose Section Styles */
 
 /* Featured Episodes Styles */
