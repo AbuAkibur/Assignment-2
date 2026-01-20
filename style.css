@@ -562,6 +562,10 @@ footer p {
         padding: 0 20px;
     }
 
+    .nav-bar{ 
+        min-height: 60px;
+    }
+
     .nav-menu, 
     .nav-bar .subscribe-btn {
         display: none;
@@ -729,6 +733,26 @@ footer p {
     .hero-title {
         font-size: 44px;
         padding-top: 30px;
+    }
+     
+    .about {
+        padding: 60px 0; 
+    }
+
+    .about-description {
+        font-size: 15px; 
+        line-height: 1.6; 
+        text-wrap: balance;
+        padding: 0 10px;
+    }
+
+    .about-description br {
+        display: none;
+    }
+
+    .cta-line {
+        display: block;
+        margin-top: 20px;
     }
 
    
