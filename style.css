@@ -10,7 +10,7 @@
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -157,7 +157,6 @@
     font-size: 18px;
     font-weight: 600;
     box-shadow: 0 3px 27px #00FF88;
-
     justify-content: center;
 }
 
@@ -524,4 +523,49 @@ footer p {
     margin: 0;
 }
 
+/* Animation */
 
+.mic:hover {
+    background: linear-gradient(270deg, #F7E93F, #FB09B4, #9100F8);
+    cursor: pointer;
+}
+
+.mic{
+    transition: background 3s ease-in-out;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); }       
+    50% { transform: translateY(-15px); } 
+    100% { transform: translateY(0); }     
+}
+
+.hero-badge {
+    animation: jump 1s ease-in-out infinite;
+}
+
+
+.btn, .features-card, .episodes-card, .nav-menu a {
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.nav-menu a:hover {
+    color: #00FF88;
+}
+
+
+.features-card:hover, .episodes-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.host-social-links a:hover {
+    transform: translateY(-5px);
+    border-color: #ffffff;
+}
