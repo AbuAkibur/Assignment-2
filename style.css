@@ -319,9 +319,7 @@
 
 .episodes-container {
     background-color: #1A0B2E;
-    display: flex;
-    justify-content: center;
-    padding: 60px 20px;
+    padding: 60px 0;
 }
 
 .episodes-content {
@@ -398,9 +396,11 @@
 .host-container {
     background: #1A0B2E;
     padding: 120px 0;
+}
+
+.host-container .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
 }
 
@@ -409,13 +409,12 @@
 }
 
 .host-content {
-    width: 100%;
-    max-width: 1100px;
-    min-height: 260px;
     display: grid;
     grid-template-columns: 200px 1fr;
-    column-gap: 48px;
-    align-items: center;
+    grid-template-rows: auto auto auto;
+    column-gap: 24px;
+    row-gap: 16px;   
+    align-items: start;
     background-color: #2E1A47;
     border-radius: 40px;
     padding: 48px 56px;
@@ -430,27 +429,25 @@
     grid-row: 1 / span 3;
 }
 
-.host-name,
-.host-description,
-.host-social-links {
-    grid-column: 2;
-}
-
 .host-name {
+    grid-column: 2;
+    grid-row: 1;
     font-size: 32px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 12px;
 }
 
 .host-description {
-    max-width: 650px;
+    line-height: 24px;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .host-social-links {
+    grid-column: 2;
+    grid-row: 3;
     display: flex;
     gap: 20px;
-    margin-top: 20px;
 }
 
 .host-social-links a {
@@ -470,4 +467,61 @@
     object-fit: contain;
 }
 
+
 /* Footer Styles */
+
+footer {
+    background-image: url('./assets/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.footer-content.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 32px; 
+}
+
+.footer-social-links {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.footer-social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-social-links img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+footer p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0;
+}
+
+
